@@ -35,22 +35,22 @@
             </form>
         </section>
 
-
+        <!-- Section where user to-do list items will appear -->
         <section class="todo-list">
-            <!-- The second section is 'todo-list' this is where all the todo items will be displayed -->
-            <h2>Things To Do </h2> <!-- This is the second header that will be displayed above the todo items -->
+
+            <h2>To Do List Items</h2>
             <div class="list" id="todo-list"></div>
-            <!-- A new div element is created that will take in the todo items created by the user with class name list -->
+            <!-- Once user adds their todo - their todo list item will appear here -->
             <!-- <label>
                 <input type="radio">
                 <span class="checkthrough"></span>
             </label> -->
         </section>
 
-        <button onclick="sortAlphabetically()" id="alphabetically" name="sortAlphabet" value="sort">Sort
-            alphabetically</button>
+        <!-- This button will be displayed after the to do list items / User can sort items in alphabetical order -->
+        <button onclick="sortInAlphabeticalOrder()" id="alphabetically" name="sortAlphabet" value="sort">Sort
+            A-Z</button>
         <!-- This button will be displayed at the bottom of the page, this has an onclick function that when it is clicked the sortAlphabetically function will be called -->
-
 
     </main>
 
