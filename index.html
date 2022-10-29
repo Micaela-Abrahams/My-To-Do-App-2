@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App (Attempt 2)</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main content on web page -->
+    <main class="app">
+
+        <!-- Section where user will insert to-do list items -->
+        <section class="create-todo">
+            <h1> To Do List</h1>
+            <h3>Hello, what's on your list today?</h3>
+
+            <!-- User to add to-do list item -->
+            <form id="new-todo-form">
+
+                <!-- User input date -->
+                <input id="date" type="date" name="date" required>
+
+                <!-- User input to-do list item -->
+                <input id="content" type="text" name="content"
+                    placeholder="What do you need to do and when? e.g. Code for 24 hours" required>
+
+                <!-- User to click Submit button -->
+                <input type="submit" value="Add Task" />
+                <!-- This input is a submit button that is called Add Task, this will add the task to the list items that forms part of the 'todo-list'-->
+            </form>
+        </section> <!-- The first section ends here -->
+
+
+        <section class="todo-list">
+            <!-- The second section is 'todo-list' this is where all the todo items will be displayed -->
+            <h2>Things To Do </h2> <!-- This is the second header that will be displayed above the todo items -->
+            <div class="list" id="todo-list"></div>
+            <!-- A new div element is created that will take in the todo items created by the user with class name list -->
+            <!-- <label>
+                <input type="radio">
+                <span class="checkthrough"></span>
+            </label> -->
+        </section>
+
+        <button onclick="sortAlphabetically()" id="alphabetically" name="sortAlphabet" value="sort">Sort
+            alphabetically</button>
+        <!-- This button will be displayed at the bottom of the page, this has an onclick function that when it is clicked the sortAlphabetically function will be called -->
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
